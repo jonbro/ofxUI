@@ -31,7 +31,7 @@ public:
     ofxUIWidget() 
     {        
         name = "base"; 
-        id = -1; 
+        this->id = -1; 
         hit = false; 
         visible = true; 
 #ifdef TARGET_OPENGLES
@@ -418,7 +418,7 @@ public:
     
     void setID(int _id)
     {
-        id = _id; 
+        this->id = _id; 
     }
     
     int getID()
